@@ -5,6 +5,8 @@ const htmlRoutes = require('./routes/htmlRoutes.js');
 
 // Initialize the app and create a port
 const app = express();
+
+// using the process.env.PORT to allow Heroku to set the port
 const PORT = process.env.port || 3001;
 
 app.use(express.json());
